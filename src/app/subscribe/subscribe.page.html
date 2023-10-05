@@ -1,13 +1,46 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>subscribe</ion-title>
+    <ion-title><img src="./assets/images/logo.svg" alt="logo" /></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">subscribe</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-sm="8" class="left">
+          <h1>Subscribe</h1>
+          <div class="section-desc">to our Monthly Surprise Box</div>
+          <ul class="breadcrumb">
+            <li>Cart</li>
+            <li><ion-icon name="chevron-forward-outline"></ion-icon></li>
+            <li>Information</li>
+            <li><ion-icon name="chevron-forward-outline"></ion-icon></li>
+            <li>Shipping</li>
+            <li><ion-icon name="chevron-forward-outline"></ion-icon></li>
+            <li>Payment</li>
+          </ul>
+          <hr />
+          <form action="">
+            <h2>Contact Information</h2>
+            <div>
+              <label for="">Your Name</label>
+              <input type="text" placeholder="e.g Osama Alshathri" />
+            </div>
+            <div>
+              <label for="">Email</label>
+              <input type="email" placeholder="Osama@gmail.com" />
+            </div>
+
+            <h2>Child’s Information</h2>
+            <h2>As a parent select any 3 topics</h2>
+          </form>
+        </ion-col>
+        <ion-col size="12" size-sm="4" class="right">
+          <h1>Summary</h1>
+          <div class="section-desc">of your Monthly Surprise Box</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
