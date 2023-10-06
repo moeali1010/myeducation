@@ -54,7 +54,12 @@
                 </select>
               </aside>
               <aside>
-                <select name="month" id="month">
+                <select
+                  name="month"
+                  id="month"
+                  #month
+                  (change)="displayDays(year.value , month.value )"
+                >
                   <option
                     class="option"
                     value="{{item}}"
@@ -65,7 +70,12 @@
                 </select>
               </aside>
               <aside>
-                <select name="year" id="year">
+                <select
+                  name="year"
+                  id="year"
+                  #year
+                  (change)="displayDays(year.value , month.value )"
+                >
                   <option
                     class="option"
                     value="{{item}}"
