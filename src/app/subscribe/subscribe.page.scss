@@ -85,4 +85,93 @@
     padding: 10px;
     margin-bottom: 24px;
   }
+
+  select {
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #d0d5dd);
+    background: var(--base-white, #fff);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    width: 100%;
+    padding: 10px 14px;
+  }
+
+  .dob {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    aside {
+      width: 32%;
+    }
+  }
+
+  .grade {
+    padding-bottom: 24px;
+  }
+
+  .gender {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    aside {
+      width: 49%;
+    }
+  }
+  //   radio button
+  ion-radio {
+    width: 16px;
+    height: 16px;
+  }
+
+  ion-radio::part(container) {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+  }
+
+  ion-radio::part(mark) {
+    background: url("../../assets/images/trailing.png") no-repeat 50%;
+    transition: none;
+    transform: none;
+    border-radius: 0;
+  }
+
+  ion-radio.radio-checked::part(container) {
+    background: #6815ec;
+    border-color: transparent;
+  }
+
+  ion-radio.radio-checked::part(mark) {
+    width: 16px;
+    height: 16px;
+    background: url("../../assets/images/checked.png") no-repeat 50%;
+  }
+
+  ion-item {
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #d0d5dd);
+  }
+
+  .topics {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    div {
+      border-radius: 48px;
+      border: 1px solid #e1e3e6;
+      background: var(--base-white, #fff);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      color: var(--gray-500, #667085);
+      font-size: 16px;
+      padding: 4px 20px;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      cursor: pointer;
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 72px;
+  }
 }
