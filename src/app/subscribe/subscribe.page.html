@@ -49,17 +49,17 @@
                 </select>
               </aside>
               <aside>
-                <select name="" id="">
+                <select name="month" id="month">
                   <option value="1">January</option>
                   <option value="1">February</option>
                   <option value="1">March</option>
                 </select>
               </aside>
               <aside>
-                <select name="" id="">
-                  <option value="1">2024</option>
-                  <option value="1">2023</option>
-                  <option value="1">2022</option>
+                <select name="year" id="year">
+                  <option value="{{item}}" *ngFor="let item of pastYears">
+                    {{item}}
+                  </option>
                 </select>
               </aside>
             </section>
