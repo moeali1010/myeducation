@@ -10,10 +10,15 @@ export class SubscribePage implements OnInit {
   // date
   currentYear: number = new Date().getFullYear();
   pastYears: number[] = [];
+  months: string[] = [];
+  days: number[] = [];
+
   constructor() {}
 
   ngOnInit() {
-    this.displayLast30years();
+    this.displayLast20years();
+    this.displayMonths();
+    this.displayDays();
   }
 
   // topics
@@ -27,22 +32,32 @@ export class SubscribePage implements OnInit {
     this.topics.length < 3 ? this.topics.push(topic) : '';
   }
 
-  displayLast30years() {
-    for (let index = 0; index < 30; index++) {
+  displayLast20years() {
+    for (let index = 0; index < 20; index++) {
       this.pastYears.push(this.currentYear - index);
     }
   }
 
-  // date
+  displayMonths() {
+    this.months = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
+  }
 
-  // const pastYears: number[] = [];
-
-  // for (let i:number = 0; i <= 30; i++) {
-  //   this.pastYears.push(currentYear - i);
-  // }
-
-  // check if year is leab
-  // isLeapYear = (year: number): boolean => {
-  //   return new Date(year, 1, 29).getDate() === 29;
-  // };
+  displayDays() {
+    for (let index = 1; index < 32; index++) {
+      this.days.push(index);
+    }
+  }
 }

@@ -44,20 +44,33 @@
             <section class="dob">
               <aside>
                 <select name="" id="">
-                  <option value="1">1</option>
-                  <option value="1">2</option>
+                  <option
+                    class="option"
+                    value="{{item}}"
+                    *ngFor="let item of days"
+                  >
+                    {{item}}
+                  </option>
                 </select>
               </aside>
               <aside>
                 <select name="month" id="month">
-                  <option value="1">January</option>
-                  <option value="1">February</option>
-                  <option value="1">March</option>
+                  <option
+                    class="option"
+                    value="{{item}}"
+                    *ngFor="let item of months"
+                  >
+                    {{item}}
+                  </option>
                 </select>
               </aside>
               <aside>
                 <select name="year" id="year">
-                  <option value="{{item}}" *ngFor="let item of pastYears">
+                  <option
+                    class="option"
+                    value="{{item}}"
+                    *ngFor="let item of pastYears"
+                  >
                     {{item}}
                   </option>
                 </select>
