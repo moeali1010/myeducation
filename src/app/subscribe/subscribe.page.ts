@@ -55,8 +55,9 @@ export class SubscribePage implements OnInit {
   }
 
   displayLast20years() {
-    for (let index = 0; index < 20; index++) {
-      this.pastYears.push(this.currentYear - index);
+    this.pastYears = []; // Clear the pastYears array
+    for (let index = 20; index > 0; index--) {
+      this.pastYears.push(this.currentYear - index + 1);
     }
   }
 
